@@ -1,3 +1,3 @@
-# QTripStatic
-QTripStatic
-https://damuluru-sanjana-me-qtripstatic.vercel.app/
+# QTripStatic & QTripDynamic 
+
+Refer the last page of the PPT for project links
