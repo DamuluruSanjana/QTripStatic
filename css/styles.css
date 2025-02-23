@@ -1,1 +1,225 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  position: relative;
+}
 
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+footer {
+  background: #f1f1f1;
+  width: 100%;
+  padding: 16px 0px;
+  color: #999;
+  vertical-align: bottom;
+  margin-top: 40px;
+  text-align: center;
+  /* width: 100%; */
+  /* height: 2.5rem;   */
+}
+
+
+
+.content {
+  padding: 20px 0px;
+  
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+/* ================================== */
+/* Layout page CSS */
+/* ================================== */
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  height: 450px; /* Adjust height as needed */
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px;
+  
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+}
+.tile img {
+  /* TODO: MODULE_CARDS */
+  
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  transition: transform .2s;
+  /* 1. Fill in the required properties. */
+}
+.tile img:hover {
+  /* TODO: MODULE_CARDS */
+  filter: brightness(0.5);
+  transform: scale(1.1);
+  
+  /* 1. Fill in the required properties. */
+}
+
+/* Hint: Notice the position:absolute and z-index properties. */
+/* Think about how those in relation to the existing "tile" classes. */
+.tile-text {
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f1f1f1;
+  height: 60vh;
+
+ 
+  
+
+  /* TODO: MODULE_LAYOUT */
+  /* 1. Set a specific height. */
+  /* 2. Position and center the image to scale nicely on all screens. */
+}
+.hero-heading{
+  text-align: center;
+}
+
+.hero-subheading {
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+}
+.hero-input {
+  width: 80%;
+  height: 70px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.nav-link {
+  margin-right: 36px;
+}
+
+
+/* ================================== */
+/* Adventures grid page CSS */
+/* ================================== */
+.container h2{
+  margin-top: 50px;
+}
+.container h3{
+  
+  font-weight: normal;
+}
+.adventure-card {
+  display: flex;
+  justify-content: center;
+  height: 300px; /* Adjust height as needed */
+  position: relative;
+  flex-direction: column;
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.adventure-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.adventure-card img:hover {
+  filter: brightness(0.5);
+  cursor: pointer;
+}
+
+.adventure-card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white; /* Adjust the background color for better readability */
+}
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+
+
+.adventure-detail-card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.adventure-card-image {
+  width: 100%;
+  height: 100%;
+}
+.adventure-card-image:hover {
+  filter: brightness(50%);
+}
+
+@media only screen and (min-width: 992px) {
+  #reservation {
+    width: 300px;
+    position: fixed;
+  }
+}
+
+
+.heading-underline {
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.heading-underline h4{
+  color: rgba(128, 128, 128, 0.585);
+}
+
+.content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For desktops phones: */
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+  .adventure-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
