@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QTrip</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Use appropriate css classes on nav element. -->
+  <!-- 2. Add child elements as required. -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">QTrip</a>
+
+      <!-- Add the toggle icon button element below to see it on the right -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/adventures/index.html">Explore</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </nav>
+
+
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Use appropriate css classes on the hero image container element. -->
+  <!-- 2. Add child elements as required. -->
+
+   <div class="hero-image d-flex flex-column justify-content-center align-items-center">
+    <h2 class="hero-heading">Welcome to QTrip </h2>
+    <h3 class="hero-subheading">Enjoy the world with fantastic places to venture around</h3>
+    <form class="hero-input d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search a City" aria-label="Search">
+    </form>
+   </div>
+
+  <div class="container my-4">
+    <!-- First row -->
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <a href="pages/adventures/index.html" class="text-decoration-none">
+        <div class="tile">
+          <img src="assets/bengaluru.jpg" class="card-img-top" alt="Bangaluru">
+          <div class="tile-text">
+            <h5>Bangaluru</h5>
+            <p>100+ Places</p>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <div class="tile">
+          <img src="assets/kolkata.jpg" class="card-img-top" alt="Kolkata">
+            <div class="tile-text">
+              <h5>Kolkata</h5>
+              <p>52+ Places</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <div class="tile">
+          <img src="assets/goa.jpg" class="card-img-top" alt="Goa">
+          <div class="tile-text">
+            <h5>Goa</h5>
+            <p>160+ Places</p>
+        
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <div class="tile">
+          <img src="assets/mumbai.jpg" class="card-img-top" alt="Mumbai">
+          <div class="tile-text">
+            <h5>Mumbai</h5>
+            <p>121+ Places</p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row -->
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <div class="tile">
+          <img src="assets/singapore.jpg" class="card-img-top" alt="Singapore">
+          <div class="tile-text">
+            <h5>Singapore</h5>
+            <p>89+ Places</p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <div class="tile">
+          <img src="assets/dubai.jpg" class="card-img-top" alt="Dubai">
+          <div class="tile-text">
+            <h5>Dubai</h5>
+            <p>74+ Places</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <div class="tile">
+          <img src="assets/malaysia.jpg" class="card-img-top" alt="Malaysia">
+          <div class="tile-text">
+            <h5>Malaysia</h5>
+            <p>172+ Places</p>
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 mb-4">
+        <div class="tile">
+          <img src="assets/paris.jpg" class="card-img-top" alt="Paris">
+          <div class="tile-text">
+            <h5>Paris</h5>
+            <p>150+ Places</p>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">© QTrip 2024</div>
+  </footer>
+
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- Add scripts needed for bootstrap to work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+</body></html>
