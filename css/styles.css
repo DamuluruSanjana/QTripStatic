@@ -24,96 +24,79 @@ footer {
   width: 100%;
   padding: 16px 0px;
   color: #999;
-  vertical-align: bottom;
-  margin-top: 40px;
-  text-align: center;
+  position: absolute;
+  bottom: 0;
   /* width: 100%; */
   /* height: 2.5rem;   */
 }
 
-
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #999;
+  margin: 20px 0px;
+}
 
 .content {
-  padding: 20px 0px;
-  
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  padding: 100px 0px;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
-
-/* ================================== */
-/* Layout page CSS */
-/* ================================== */
-
 .tile {
-  display: flex;
-  justify-content: center;
-  align-items:flex-end;
-  height: 450px; /* Adjust height as needed */
   position: relative;
+  height: 100%;
+  /* width: calc(25% - 20px); */
+  /* padding: 6px; */
+  border-radius: 8px;
   cursor: pointer;
-  box-sizing: border-box;
+  -webkit-transition: 0.2s all;
   overflow: hidden;
-  border-radius: 5px;
-  
-  /* TODO: MODULE_CARDS */
-  /* 1. Fill in the required properties. */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .tile img {
-  /* TODO: MODULE_CARDS */
-  
+  width: 100%;
   height: 100%;
-  width:100%;
-  object-fit: cover;
-  transition: transform .2s;
-  /* 1. Fill in the required properties. */
+  border-radius: 8px;
+  -webkit-transition: 0.2s all;
+  /* -webkit-filter: brightness(70%); */
 }
 .tile img:hover {
-  /* TODO: MODULE_CARDS */
-  filter: brightness(0.5);
+  -webkit-filter: brightness(50%);
   transform: scale(1.1);
-  
-  /* 1. Fill in the required properties. */
 }
 
-/* Hint: Notice the position:absolute and z-index properties. */
-/* Think about how those in relation to the existing "tile" classes. */
 .tile-text {
   position: absolute;
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
-  text-align: center;
 }
-
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
-  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?cs=srgb&dl=pexels-josh-hild-2422461.jpg&fm=jpg");
+
+  /* Set a specific height */
+  height: 50vh;
+  width: 100vw;
+  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
-  color: #f1f1f1;
-  height: 60vh;
-
- 
-  
-
-  /* TODO: MODULE_LAYOUT */
-  /* 1. Set a specific height. */
-  /* 2. Position and center the image to scale nicely on all screens. */
-}
-.hero-heading{
-  text-align: center;
+  background-size: cover;
+  position: relative;
 }
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
-  text-align: center;
 }
 .hero-input {
   width: 80%;
-  height: 70px;
+  height: 50px;
   padding: 16px;
   border-radius: 8px;
   border: none;
@@ -123,103 +106,158 @@ footer {
   margin-right: 36px;
 }
 
+/* activity page css */
 
-/* ================================== */
-/* Adventures grid page CSS */
-/* ================================== */
-.container h2{
-  margin-top: 50px;
-}
-.container h3{
-  
-  font-weight: normal;
-}
-.adventure-card {
-  display: flex;
-  justify-content: center;
-  height: 300px; /* Adjust height as needed */
+.activity-card {
+  color: #000;
   position: relative;
-  flex-direction: column;
-  border: 2px solid rgba(0, 0, 0, 0.212);
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.adventure-card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.adventure-card img:hover {
-  filter: brightness(0.5);
+  height: 350px;
+  /* width: calc(25% - 20px); */
+  /* padding: 6px; */
+  border: 1px solid #ddd;
+  border-radius: 8px;
   cursor: pointer;
-}
+  -webkit-transition: 0.2s all;
+  overflow: hidden;
 
-.adventure-card-text {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: white; /* Adjust the background color for better readability */
 }
-/* ================================== */
-/* Adventure details page CSS */
-/* ================================== */
+.activity-card img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 8px; */
+  -webkit-transition: 0.2s all;
+  /* -webkit-filter: brightness(70%); */
+}
+.activity-card img:hover {
+  -webkit-filter: brightness(50%);
+  /* transform: scale(1.1); */
+}
 
+/* activity-detail page css */
 
 .adventure-detail-card {
   border: 1px solid #eee;
   border-radius: 4px;
   padding: 16px;
+  /* margin: 8px; */
 }
 
-.adventure-card-image {
+.activity-card-image {
+  height: 500px;
   width: 100%;
-  height: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  border-radius: 2px;
 }
-.adventure-card-image:hover {
-  filter: brightness(50%);
+.activity-card-image:hover {
+  -webkit-filter: brightness(50%);
 }
-
-@media only screen and (min-width: 992px) {
-  #reservation {
-    width: 300px;
-    position: fixed;
-  }
-}
-
-
-.heading-underline {
-  border-bottom: 2px solid #dee2e6;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-.heading-underline h4{
-  color: rgba(128, 128, 128, 0.585);
-}
-
-.content ul li {
+.experience-content ul li {
   margin-left: 16px;
   padding: 0;
 }
+.filter-bar {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 20px 0px;
+}
 
+.filter-bar-tile {
+  border-right: 1px solid #999;
+  padding: 0px 20px;
+}
 
+.category-filter {
+  border: 1px solid orange;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin: 10px 10px 10px 0px;
+}
+.category-banner {
+  position: absolute;
+  /* height: 50px; */
+  padding: 5px 10px;
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.3);
+  /*
+  box-shadow: 0px 9.4px 20.4px rgba(0, 0, 0, 0.13),
+    0px 9.2px 20.6px rgba(0, 0, 0, 0.1); */
+  min-width: 50%;
+  color: #fff;
+  background: rgb(255, 145, 0);
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin-top: 16px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0px 0px 10px;
+  font-weight: bolder;
+}
 
-@media only screen and (max-width: 768px) {
-  /* For desktops phones: */
-  #reservation {
-    width: 400px;
-    position: fixed;
-  }
-  .adventure-card-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
+.reserve-button {
+  width: 100%;
+  border: none;
+  background-color: rgb(255, 145, 0);
+  color: #fff;
+  font-weight: bolder;
+  padding: 15px;
+  margin: 20px 0px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.reserve-button:hover {
+  background-color: rgb(226, 129, 1);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+#reserved-banner {
+  display: none;
+}
+.reservation-visit-button {
+  background-color: rgb(255, 145, 0);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  white-space: nowrap;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.reservation-visit-button:hover {
+  background-color: rgb(226, 129, 1);
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+}
+#reservation-panel-sold-out {
+  border: solid 1px #eee;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 30px;
+}
+#reservation-panel-available {
+  border: solid 1px #eee;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 30px;
 }
